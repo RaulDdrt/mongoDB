@@ -1,6 +1,5 @@
 const photoModel = require("../model/model")
 
-module.exports = {}
 
 function getPhotos(req, res){
     if(req.query.id == null){
