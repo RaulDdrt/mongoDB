@@ -87,18 +87,18 @@ newMark.aggregate([{$group: {
                     media: { $avg: "$mark" }
 }
 },
-                {
-                $match: {
-                media: { $gt: 5 }
+                    {
+                    $match: {
+                    media: { $gt: 5 }
 }
 },
-                {
-                $sort: {
-                media: -1
+                    {
+                    $sort: {
+                    media: -1
 }
 },
-                {
-                $limit: 5
+                    {
+                    $limit: 5
 }])
 .then((result)=>{
     result.forEach(subject =>{
